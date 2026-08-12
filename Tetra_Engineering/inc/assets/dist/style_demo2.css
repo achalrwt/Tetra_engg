@@ -2513,6 +2513,7 @@ footer.footer-red::before {
   justify-content: center;
   margin-bottom: 2rem;
   margin-left: 5rem;
+  transition: background-color 0.4s ease-in-out;
 }
 .services-section .service-card .services-content-block .service-icon svg {
   height: 3.4rem;
@@ -2529,6 +2530,7 @@ footer.footer-red::before {
   color: var(--secondary-color);
   margin-left: 5rem;
   line-height: 40px;
+  transition: color 0.4s ease-in-out;
 }
 .services-section .service-card .services-content-block .services-list {
   list-style: none;
@@ -2613,6 +2615,7 @@ footer.footer-red::before {
 .services-section .service-card .services-content-block .project-discription p {
   max-width: 90%;
   line-height: 1.7;
+  transition: color 0.4s ease-in-out;
 }
 @media (max-width: 767px) {
   .services-section .service-card .services-content-block .project-discription {
@@ -2636,10 +2639,12 @@ footer.footer-red::before {
   text-transform: uppercase;
   color: var(--primary-color);
   letter-spacing: 1.6px;
+  transition: color 0.4s ease-in-out;
 }
 .services-section .service-card .services-content-block .info p {
   margin-top: 1rem;
   line-height: 34px;
+  transition: color 0.4s ease-in-out;
 }
 .services-section .service-card .services-content-block .service-btn {
   margin-top: 2.5rem;
@@ -2662,6 +2667,28 @@ footer.footer-red::before {
 }
 .services-section .service-card .services-content-block .service-btn .btn.primary .text-two svg {
   fill: var(--primary-white);
+}
+.services-section .service-card:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 25px 60px rgba(16, 37, 33, 0.18);
+}
+.services-section .service-card:hover .service-img img {
+  transform: scale(1.1);
+}
+.services-section .service-card:hover .services-content-block .service-icon {
+  background-color: var(--secondary-color);
+}
+.services-section .service-card:hover .services-content-block .service-title {
+  color: var(--primary-white);
+}
+.services-section .service-card:hover .services-content-block .project-discription p {
+  color: var(--primary-white);
+}
+.services-section .service-card:hover .services-content-block .info .title {
+  color: var(--primary-white);
+}
+.services-section .service-card:hover .services-content-block .info p {
+  color: var(--primary-white);
 }
 .services-section .swiper-button-disabled {
   opacity: 0.5 !important;
